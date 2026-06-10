@@ -1,7 +1,7 @@
 function solution(arr, queries) {
   let result = [];
 
-  queries.map((query, queryIndex) => {
+  queries.forEach((query, queryIndex) => {
     const sliced = arr.slice(query[0], query[1] + 1);
 
     const number = sliced.filter((number) => number > query[2]);
